@@ -47,7 +47,7 @@ class Countdown extends React.Component {
         }
 
         return (
-            <div>
+            <div className="home">
                 <h1>Countdown</h1>
                 <div className="countdown-wrapper">
                     {months && (

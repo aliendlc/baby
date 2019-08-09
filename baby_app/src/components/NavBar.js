@@ -4,14 +4,24 @@ import Giraffe from '../favicon.png'
 
 const NavBar = () => {
     return (
-        <nav className="nav-wrapper deep-purple accent-1">
-            <div className="container">
-                <ul className="left">
+        <nav className="nav-wrapper deep-purple accent-1"
+        id="navWrap">
+            <div
+            id="nav"
+            class="nav-collapse collapse">
+                <ul
+                id="leftSide"
+                className="left"
+                margin-left="2em">
                     <img id='giraffe' src={Giraffe} alt='not here'/>
-                    <li><Link to="/">Home</Link></li>
                 </ul>
-                <a className="brand-logo">Baby Time</a>
-                <ul className="right">
+                <a
+                id="title"
+                className="brand">Baby Time</a>
+                <ul
+                 id="rightSide"
+                 className="right">
+                    <li><Link to="/">Home</Link></li>
                     <li><NavLink to="/BabyShower">Baby Shower</NavLink></li>
                     <li><NavLink to="/Photos">Photos</NavLink></li>
                 </ul>
